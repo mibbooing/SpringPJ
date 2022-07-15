@@ -8,10 +8,9 @@ import org.springframework.stereotype.Repository;
 
 import com.java.mib.maccount.security.CustomUserDetails;
 
-@Repository
 @Mapper
 public interface MemberInfoDao {
 	List<Map<String, Object>> getMemberInfoData();
 	
-	CustomUserDetails getUserById();
+	CustomUserDetails getUserById(String userid);
 }

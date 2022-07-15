@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/login_test?characterEncoding=UTF-8&useTimezone=true&serverTimezone=Asia/Seoul
-    username: root
-    password: dlfjftn1 
+    url: jdbc:mysql://118.34.130.108:3306/login_test?characterEncoding=UTF-8&useTimezone=true&serverTimezone=Asia/Seoul
+    username: mibboo
+    password: dlfjftn1
   thymeleaf:
     prefix : classpath:templates/
     suffix : .html

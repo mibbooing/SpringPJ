@@ -25,7 +25,10 @@ public class WebSecurityConfig{
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		http.authorizeHttpRequests().antMatchers("/login","/signup").permitAll()
 						.antMatchers("/home").hasRole("MEMBER");
-		http.formLogin(formLogin -> formLogin.loginPage("/member/login"));
+		http.formLogin()
+			.loginPage("/login")
+			.usernameParameter("userid")
+			.loginProcessingUrl("/login");
 		http.csrf().disable();
 		http.logout();		
 		

@@ -10,7 +10,7 @@
   </select>
   
   <select id="getUserById" parameterType="String" resultType="com.java.mib.maccount.security.CustomUserDetails">
-	SELECT * FROM account_userinfo WHERE ID=#{id}
+	SELECT * FROM account_userinfo WHERE userid=#{userid}
   </select>
 
 </mapper>
