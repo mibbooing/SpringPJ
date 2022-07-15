@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/login_test?characterEncoding=UTF-8&useTimezone=true&serverTimezone=Asia/Seoul
+    username: root
+    password: dlfjftn1 
+  thymeleaf:
+    prefix : classpath:templates/
+    suffix : .html
+    cache : false
+    
+mybatis:
+  type-aliases-package: com.java.mib.maccount.model.dto
+  mapper-locations: mybatis/mapper/*.xml
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.java.mib.maccount.model.dao.MemberInfoDao">
+
+  <select id="getMemberInfoData" resultType="java.util.HashMap">
+    SELECT * FROM account_userinfo;
+  </select>
+  
+  <select id="getUserById" parameterType="String" resultType="com.java.mib.maccount.security.CustomUserDetails">
+	SELECT * FROM account_userinfo WHERE ID=#{id}
+  </select>
+
+</mapper>
